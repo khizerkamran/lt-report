@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LT-Report</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+  <link rel="icon" href="https://img.icons8.com/fluency/48/dashboard.png"/>
+</head>
+<body>
+  <header>
+    <h1>LT-Report</h1>
+  </header>
+
+  <main>
+    <div class="loader" id="loader"></div>
+    <iframe
+      title="Power BI Dashboard"
+      src="https://app.powerbi.com/reportEmbed?reportId=16f49d88-e94f-4d00-9301-b2b04206d251&autoAuth=true&ctid=e25127b3-a4dd-4c61-9ef6-0de4c4ed9723"
+      allowFullScreen
+      onload="document.getElementById('loader').style.display='none';"
+    ></iframe>
+  </main>
+
+  <footer>
+    <p>© 2025 LT-Report. All rights reserved.</p>
+  </footer>
+</body>
+</html>
